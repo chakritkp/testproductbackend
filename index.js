@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 app.use(helmet());
 
-mongoose.connect(`mongodb+srv://chakritkaewploy:AvirFn47rlZYBiCv@cluster0.yf01htl.mongodb.net/productlist`);
+mongoose.connect(`mongodb+srv://${DBURI}:${DATAAUTH}.yf01htl.mongodb.net/${DB}`);
 
 app.use("/api", productsRoutes)
 app.use(express.urlencoded({ extended: true }));
