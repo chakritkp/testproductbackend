@@ -25,7 +25,7 @@ app.use("/api", productsRoutes)
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', async (req, res) => {
-    res.send('Chakrit Kaewploy')
+    res.send('Test : Chakrit Kaewploy')
   });
   
 // Start the server
