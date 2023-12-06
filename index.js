@@ -25,7 +25,7 @@ app.use("/api", productsRoutes)
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', async (req, res) => {
-    res.send('Test : Chakrit Kaewploy')
+    res.send('Welcome to XSF: FullStack Developer Test!')
   });
   
 // Start the server
